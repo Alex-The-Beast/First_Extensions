@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "My Extensions",
+    "version": "1.0.0",
+    "description": "A basic example extension with only required keys",
+    "icons": {
+      "32": "icon32.png"
+      
+    },
+    "background":{
+        "service_worker":"service-worker.js",
+        "type":"module"
+
+    },
+    "action":{
+        "default_popup":"index.html"
+     },
+    "permissions":[
+        "scripting"
+        
+    ],
+    "host_permissions":[
+        "http://*/*",
+         "https://*/*"
+    ]
+
+  }
